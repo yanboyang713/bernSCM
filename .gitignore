@@ -1,0 +1,4 @@
+# ignore following directories
+forcing/*
+runfiles/*
+output/*
