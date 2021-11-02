@@ -1,4 +1,21 @@
+*.ttf
+__pycache__
+
+# bernSCM executables
+bernSCMD0.1
+bernSCMD10QI
+bernSCMD1I
+
 # ignore following directories
 forcing/*
 runfiles/*
 output/*
+src/*
+log/*
+plots/*
+
+#Pycharm stuffs
+.idea/
+
+#jupyternotebook stuff
+.ipynb_checkpoints/*
