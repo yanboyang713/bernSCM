@@ -8,3 +8,8 @@ BernSCM makes scientifically sound carbon cycle-climate modeling available for m
 Supporting up to decadal timesteps with high accuracy, it is suitable for studies with high computational load, and for coupling with, e.g., Integrated Assessment Models (IAM). Further applications include climate risk assessment in a business, public, or educational context, and the estimation of CO2 and climate benefits of emission mitigation options.
 
 See the file BernSCM_manual(.pdf) for instructions on the use of the program. 
+
+# Build the container
+docker build -t fortran .
+
+docker run --rm -it -v $(pwd):/source fortran /bin/bash
