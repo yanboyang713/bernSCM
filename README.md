@@ -10,6 +10,8 @@ Supporting up to decadal timesteps with high accuracy, it is suitable for studie
 See the file BernSCM_manual(.pdf) for instructions on the use of the program. 
 
 # Build the container
-docker build -t fortran .
-
-docker run --rm -it -v $(pwd):/source fortran /bin/bash
+docker build --no-cache -t alpine-jupyter:latest .
+# Run
+docker run --rm -it -p 8888:8888 -v $(pwd):/source alpine-jupyter /bin/bash
+conda activate myenv
+jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password='' --allow-root
