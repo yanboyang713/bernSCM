@@ -12,6 +12,6 @@ See the file BernSCM_manual(.pdf) for instructions on the use of the program.
 # Build the container
 docker build --no-cache -t alpine-jupyter:latest .
 # Run
-docker run --rm -it -p 8888:8888 -v $(pwd):/source alpine-jupyter /bin/bash
-conda activate myenv
-jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password='' --allow-root
+1. docker run --rm -it -p 8888:8888 -v $(pwd):/source alpine-jupyter /bin/bash
+2. conda activate myenv
+3. jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password='' --allow-root

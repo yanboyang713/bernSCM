@@ -2,20 +2,16 @@
 __pycache__
 
 # bernSCM executables
-bernSCMD0.1
-bernSCMD10QI
-bernSCMD1I
+bernSCM/bernSCMD0.1
+bernSCM/bernSCMD10QI
+bernSCM/bernSCMD1I
 
 # ignore following directories
-forcing/*
-runfiles/*
-output/*
-src/*
-log/*
-plots/*
-
-#Pycharm stuffs
-.idea/
+bernSCM/forcing/*
+bernSCM/runfiles/*
+bernSCM/output/*
+bernSCM/log/*
+bernSCM/plots/*
 
 #jupyternotebook stuff
-.ipynb_checkpoints/*
+bernSCM/.ipynb_checkpoints/*

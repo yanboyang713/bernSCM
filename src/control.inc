@@ -1,1 +1,0 @@
-control_D10QI.inc

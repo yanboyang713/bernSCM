@@ -7,6 +7,9 @@ ARG CONDA_DIR="/opt/conda"
 ENV PATH="$CONDA_DIR/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 
+
+RUN apk add --no-cache tiff
+
 # Install conda
 RUN echo "**** install dev packages ****" && \
     apk add --no-cache --virtual .build-dependencies bash ca-certificates wget && \
